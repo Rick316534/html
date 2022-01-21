@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 以上是reset */
+
+.center {
+    margin: 0 auto;
+}
+
+.margin-right {
+    margin-right: 14.6px;
+}
+
+.container {
+    background-color: rgb(235, 235, 235);
+}
+
+.header {
+    width: 100%;
+    height: 180px;
+    background: #4C8F96 0% 60px repeat-x;
+}
+
+.headbox {
+    padding-top: 60px;
+    width: 940px;
+}
+
+.logo {
+    float: left;
+    width: 270px;
+    height: 130px;
+    background: url(images/bg-logo.png);
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 130px;
+    
+}
+
+.menu {
+    float: right;
+    padding-top: 55px;
+}
+
+.menu li { 
+    height: 30px;
+    margin-left: 14px;
+    display: inline-block;
+    background: url(/images/bg-nav-left.gif) 0% 50% no-repeat, url(/images/bg-nav-right.gif)  100% 50% no-repeat;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.menu .selected {
+    background: url(/images/bg-nav-left-selected.gif) 0% 50% no-repeat, url(/images/bg-nav-right-selected.gif)  100% 50% no-repeat;
+}
+
+.content {
+    width: 940px;
+}
+.sidebar {
+    box-sizing: border-box;
+    margin-top: 60px;
+    width: 940px;
+    height: 360px;
+    /* background: url(/images/bg-sidebar-heading.jpg) 0% 0% no-repeat, url(/images/bg-sidebar.jpg) 0% 50% repeat-y, url(/images/bg-sidebar-footer.jpg) 0% 100% no-repeat; */
+    background: #60B2BE;
+    padding: 2px;
+}
+
+.sidebar .big-icon {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #FFF url(/images/great-hairstyle.jpg) no-repeat;
+    padding: 125px 90px 160px 450px;
+    font-size: 31px;
+    font-weight: bold;
+
+} 
+
+.hairstyle {
+    height: 355px;
+    width: 220px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 5px 5px 0;
+    background: url(/images/frame.png) 50% 0% no-repeat
+}
+
+.icon1 {
+    width: 100% ;
+    height: 175px;
+    background: url(/images/hairstyle17.jpg) 50% 0% no-repeat;
+}
+
+.icon2 {
+    width: 100% ;
+    height: 175px;
+    background: url(/images/hairstyle18.jpg) 50% 0% no-repeat;
+}
+
+.icon3 {
+    width: 100% ;
+    height: 175px;
+    background: url(/images/hairstyle19.jpg) 50% 0% no-repeat;
+}
+
+.icon4 {
+    width: 100% ;
+    height: 175px;
+    background: url(/images/hairstyle20.jpg) 50% 0% no-repeat;
+}
+
+.hairstyle h2 {
+    margin-top: 35px;
+}
