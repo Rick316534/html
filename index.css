@@ -168,9 +168,7 @@ table {
     box-sizing: border-box;
     width: 460px;
     height: 588px;
-    background-color: white;
-    /* background: url(/images/bg-sidebar-heading.jpg) 50% 0 no-repeat, url(/images/bg-sidebar.jpg) 50% 50% repeat-y, url(/images/bg-sidebar-footer.jpg) 50% 100% no-repeat; */
-}
+    background-color: white;}
 .featured-box1 .featured-icon {
     margin: 50px 0 0 10px;
     padding-left: 120px;
