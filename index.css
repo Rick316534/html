@@ -97,7 +97,6 @@ table {
     padding: 2px;
     box-sizing: border-box;
     border-radius: 4px;
-    width: 940px;
     height: 360px;
     line-height: 48px;
     background: #60B2BE;
@@ -109,7 +108,6 @@ table {
     height: 100%;
     background: #FFF url(./images/great-hairstyle.jpg) no-repeat;
     font-size: 31px;
-    font-weight: bold;
 } 
 .hair-warp {
     margin-top: 48px;
@@ -171,7 +169,6 @@ table {
     padding-left: 120px;
     font-size: 21px;
     box-sizing: border-box;
-    width: 400px;
     height: 90px;
     background: url(./images/featured.jpg) 0% 50% no-repeat;
 }
@@ -189,7 +186,7 @@ table {
     font-size: 20px;
 }
 .featured p {
-    margin-top: 24px 0 0 10px;
+    margin: 24px 0 0 10px;
     line-height: 24px;
     font-size: 12px;
 }
