@@ -49,11 +49,8 @@ table {
 .center {
     margin: 0 auto;
 }
-.margin-right {
-    margin-right: 14.6px;
-}
 .container {
-    background-color: rgb(235, 235, 235);
+    background-color: #EDEDED;
 }
 .header {
     height: 180px;
@@ -192,8 +189,7 @@ table {
     font-size: 20px;
 }
 .featured p {
-    margin-top: 24px;
-    margin-left: 10px;
+    margin-top: 24px 0 0 10px;
     line-height: 24px;
     font-size: 12px;
 }
@@ -226,10 +222,9 @@ table {
     text-align: center;
     font-size: 21px;
 }
-.hairtext-box1 .mike{
+.hairtext-box1 .mike {
     padding: 16px 0 0 353px ;
     font-size: 18px;
-    
 }
 .hairtext-box2 {
     position: relative;
@@ -281,10 +276,10 @@ table {
     margin-right: 11px;
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 390px) {
     .container {
-        width: 390px;
         margin: 0 auto;
+        width: 390px;
     }
     .header {
         height: 100%;
@@ -332,8 +327,7 @@ table {
     } 
     .hairstyle {
         float: none;
-        margin-right: 0px;
-        margin-left: 80px;
+        margin-right: 0 0 0 80px;
     }
     .content-last {
         margin: 28px 0;
@@ -349,18 +343,18 @@ table {
     .featured-box1 .featured-icon {
         margin: 50px 0 0 10px;
         padding-left: 120px;
-        font-size: 21px;
         box-sizing: border-box;
         width: 380px;
         background: url(./images/featured.jpg) 0% 50% no-repeat;
+        font-size: 21px;
     }
     .hairtext {
         float: none;
         width: 380px;
     }
     .hairtext-box1 {
-        height: 100%;
         padding: 45px 15px 1px;
+        height: 100%;
     }
     .hairtext-box1 .mike{
         padding: 16px 0 0 265px ;        
