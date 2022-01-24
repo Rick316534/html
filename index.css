@@ -324,7 +324,7 @@ table {
     } 
     .hairstyle {
         float: none;
-        margin: 0 0 0 80px;
+        margin-left: 80px;
     }
     .content-last {
         margin: 28px 0;
