@@ -41,124 +41,350 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* 以上是reset */
-
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .center {
     margin: 0 auto;
 }
-
 .margin-right {
     margin-right: 14.6px;
 }
-
 .container {
     background-color: rgb(235, 235, 235);
 }
-
 .header {
-    width: 100%;
     height: 180px;
     background: #4C8F96 0% 60px repeat-x;
 }
-
 .headbox {
     padding-top: 60px;
     width: 940px;
 }
-
 .logo {
     float: left;
     width: 270px;
     height: 130px;
-    background: url(images/bg-logo.png);
+    line-height: 130px;
+    background: url(./images/bg-logo.png);
     font-size: 60px;
     font-weight: bold;
     color: white;
     text-align: center;
-    line-height: 130px;
-    
 }
-
 .menu {
     float: right;
-    padding-top: 55px;
+    padding-top: 54px;
 }
-
 .menu li { 
-    height: 30px;
-    margin-left: 14px;
     display: inline-block;
-    background: url(/images/bg-nav-left.gif) 0% 50% no-repeat, url(/images/bg-nav-right.gif)  100% 50% no-repeat;
+    margin-left: 14px;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 33px;
+    background: url(./images/bg-nav-left.gif) 0% 50% no-repeat, url(./images/bg-nav-right.gif)  100% 50% no-repeat;
     color: white;
     text-align: center;
     letter-spacing: 1px;
-    line-height: 30px;
-    padding: 0 15px;
 }
-
 .menu .selected {
-    background: url(/images/bg-nav-left-selected.gif) 0% 50% no-repeat, url(/images/bg-nav-right-selected.gif)  100% 50% no-repeat;
+    background: url(./images/bg-nav-left-selected.gif) 0% 50% no-repeat, url(./images/bg-nav-right-selected.gif)  100% 50% no-repeat;
 }
-
 .content {
     width: 940px;
 }
 .sidebar {
-    box-sizing: border-box;
     margin-top: 60px;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 4px;
     width: 940px;
     height: 360px;
-    /* background: url(/images/bg-sidebar-heading.jpg) 0% 0% no-repeat, url(/images/bg-sidebar.jpg) 0% 50% repeat-y, url(/images/bg-sidebar-footer.jpg) 0% 100% no-repeat; */
+    line-height: 48px;
     background: #60B2BE;
-    padding: 2px;
+    font-weight: bold;
 }
-
 .sidebar .big-icon {
-    width: 100%;
-    height: 100%;
+    padding: 110px 90px 160px 450px;
     box-sizing: border-box;
-    background: #FFF url(/images/great-hairstyle.jpg) no-repeat;
-    padding: 125px 90px 160px 450px;
+    height: 100%;
+    background: #FFF url(./images/great-hairstyle.jpg) no-repeat;
     font-size: 31px;
     font-weight: bold;
-
 } 
-
-.hairstyle {
-    height: 355px;
-    width: 220px;
-    margin-top: 50px;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 5px 5px 0;
-    background: url(/images/frame.png) 50% 0% no-repeat
+.hair-warp {
+    margin-top: 48px;
 }
-
+.hairstyle {
+    float: left;
+    margin-right: 20px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 380px;
+    background: url(./images/frame.png) 50% 0% no-repeat;
+}
+.hairstyle:last-child {
+    margin-right: 0;
+}
+.hairstyle h2 {
+    margin: 33px 0 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.hairstyle p {
+    line-height: 24px;
+    font-size: 12px;
+}
 .icon1 {
-    width: 100% ;
     height: 175px;
-    background: url(/images/hairstyle17.jpg) 50% 0% no-repeat;
+    background: url(./images/hairstyle17.jpg) 50% 0% no-repeat;
 }
 
 .icon2 {
-    width: 100% ;
     height: 175px;
-    background: url(/images/hairstyle18.jpg) 50% 0% no-repeat;
+    background: url(./images/hairstyle18.jpg) 50% 0% no-repeat;
 }
 
 .icon3 {
-    width: 100% ;
     height: 175px;
-    background: url(/images/hairstyle19.jpg) 50% 0% no-repeat;
+    background: url(./images/hairstyle19.jpg) 50% 0% no-repeat;
 }
-
 .icon4 {
-    width: 100% ;
     height: 175px;
-    background: url(/images/hairstyle20.jpg) 50% 0% no-repeat;
+    background: url(./images/hairstyle20.jpg) 50% 0% no-repeat;
+}
+.content-last {
+    margin: 28px 0 36px;
+}
+.featured {
+    position: relative;
+    float: left;
+    padding: 5px;
+    border: #60B2BE 5px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 460px;
+    height: 588px;
+    background-color: white;
+    /* background: url(/images/bg-sidebar-heading.jpg) 50% 0 no-repeat, url(/images/bg-sidebar.jpg) 50% 50% repeat-y, url(/images/bg-sidebar-footer.jpg) 50% 100% no-repeat; */
+}
+.featured-box1 .featured-icon {
+    margin: 50px 0 0 10px;
+    padding-left: 120px;
+    font-size: 21px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 90px;
+    background: url(./images/featured.jpg) 0% 50% no-repeat;
+}
+.featured h2 {
+    position: absolute;
+    top: -14px;
+    left: 15px;
+    width: 180px;
+    height: 47px;
+    line-height: 48px;
+    letter-spacing: 3px;
+    background: url(./images/bg-logo.png);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.featured p {
+    margin-top: 24px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.hairtext {
+    position: relative;
+    float: right;
+    width: 460px;
+}
+.hairtext-box1 {
+    height: 258px;
+    padding: 75px 15px 1px;
+    border: #60B2BE 5px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #529392;
+    font-size: 12px;
+    color: white;
+    line-height: 24px;
+}
+.hairtext-box1 h2 {
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    width: 180px;
+    height: 47px;
+    line-height: 49px;
+    letter-spacing: 2px;
+    background: url(./images/bg-logo.png);
+    color: white;
+    text-align: center;
+    font-size: 21px;
+}
+.hairtext-box1 .mike{
+    padding: 16px 0 0 353px ;
+    font-size: 18px;
+    
+}
+.hairtext-box2 {
+    position: relative;
+    margin: 25px 0px 0px;
+    border: #60B2BE 5px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 227px;
+    background-color: #529392;
+}
+.hairtext-box2 img {
+    position: absolute;
+    top: -13px;
+    left: -5px;
+}
+.hairtext-box2 p {
+    padding: 35px 15px 0px 215px;
+    line-height: 29px;
+    font-size: 16px;
+    color: white; 
+}
+.footer {
+    height: 120px;
+    background-color: #4D9196;
+}
+.footer-box {
+    width: 940px;
+}
+.footer p {
+    float: left;
+    margin: 56px  0 0 340px;
+    color: white;
+    font-size: 12px;
+}
+.footer .imgs {
+    float: right;
+    margin: 30px 10px 0px 0px;
+    padding: 20px 0 0 29px;
+    box-sizing: border-box;
+    width: 190px;
+    height: 62px;
+    border-radius: 2px;
+    background-color: #397C80;
+}
+.footer img {
+    margin-right: 12px;
+}
+.footer .footer-img2 {
+    margin-right: 11px;
 }
 
-.hairstyle h2 {
-    margin-top: 35px;
+@media screen and (max-width: 390px){
+    .container {
+        width: 390px;
+        margin: 0 auto;
+    }
+    .header {
+        height: 100%;
+    }
+    .headbox {
+        margin: 0 auto;
+        padding-top: 0;
+        width: 100%;
+    }
+    .logo {
+        float: none;
+        width: 100%;
+        height: 65px;
+        line-height: 65px;
+        font-size: 35px;
+    }
+    .menu {
+        float: none;
+        padding-top: 0 ;
+        text-align: center;
+    }
+    .menu li { 
+        margin: 10px 0;
+        padding: 0 15px;
+        height: 30px;    
+    }    
+    .content {
+        width: 380px;
+    }
+    .sidebar {
+        margin-top: 0;
+        padding: 2px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+        height: 490px;
+        background: #60B2BE;
+        font-weight: bold;
+    }
+    .sidebar .big-icon {
+        padding: 350px 75px 0;
+        height: 485px;
+        border-radius: 4px;
+        font-size: 18px;
+    } 
+    .hairstyle {
+        float: none;
+        margin-right: 0px;
+        margin-left: 80px;
+    }
+    .content-last {
+        margin: 28px 0;
+    }
+    .featured {
+        position: relative;
+        float: none;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 380px;
+        height: 100%;
+    }
+    .featured-box1 .featured-icon {
+        margin: 50px 0 0 10px;
+        padding-left: 120px;
+        font-size: 21px;
+        box-sizing: border-box;
+        width: 380px;
+        background: url(./images/featured.jpg) 0% 50% no-repeat;
+    }
+    .hairtext {
+        float: none;
+        width: 380px;
+    }
+    .hairtext-box1 {
+        height: 100%;
+        padding: 45px 15px 1px;
+    }
+    .hairtext-box1 .mike{
+        padding: 16px 0 0 265px ;        
+    }
+    .hairtext-box2 p {
+        font-size: 12px;
+    }
+    .footer {
+        height: 160px;
+    }
+    .footer-box {
+        width: 380px;
+    }
+    .footer p {
+        float: none;
+        margin: 0px 70px;
+        padding: 20px 0 5px;
+        width: 250px;
+        font-size: 12px;
+    }
+    .footer .imgs {
+        float: none;
+        margin-left: 100px;
+    }
 }
